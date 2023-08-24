@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(240, 248, 255);
+            font-family: serif;
+            margin:1rem auto;
+            width:fit-content;
+            margin-left: auto;
+            margin-right:  auto;
+            font-size: 150%;
+            margin-top: 5%;
+            background-image: url(../Form/_Images/Landscape.jpg);
+            color: aliceblue;
+        }
+        td{
+            padding-left: 3%;
+            padding-top: 3%;
+            padding-bottom: 3%;
+            padding-right: 3%;
+        }
+        form{
+            background-color: hsla(0, 0%, 0%, 0.5); /* Adjust the alpha value (0.5) for transparency */
+            padding: 20px;
+            border-radius: 10px;
+            border: 2px solid;
+            border-color: rgb(255, 254, 254);
+        }
+        form input[type="text"], input[type="password"],input[type="date"],input[type="email"] {
+        background-color: rgba(251, 250, 249, 0.4);  /*Adjust the alpha value (0.1) for transparency */
+        border: 1px solid rgb(26, 15, 15);
+        padding: 5px;
+        border-color: rgb(255, 254, 254);
+        }
+        table{
+            height: 100%;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <form >
+        <!--Fieldset 1-->
+        <legend style="font-size: 200%; text-align: center;" ><b>Sign Up!</b></legend>
+            <table>
+                <tr>
+                    <td><label>Username:</label></td>
+                </tr>
+                <tr>
+                    <td><input type="text" maxlength="25" size="50" minlength="3" placeholder="Username"></td>
+                </tr>
+                <tr>
+                    <td><label>Email:</label></td>
+                </tr>
+                <tr>
+                <td><input type="email" maxlength="25" size="50" minlength="3" placeholder="Email"></td>
+                </tr>
+                <tr>
+                    <td><label>Password:</label></td>
+                </tr>
+                <tr>
+                    <td><label><input type="password" maxlength="30" minlength="13" size="50" placeholder="Password"></label></td>
+                </tr>
+                <tr>
+                    <td><label><input type="checkbox" name="gender" value="Male">Male </label>
+                        <label><input type="checkbox" name="gender" value="Female">Female </label></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;"><button onclick="Register">Register</button></td>
+                </tr>
+                
+                
+            </table>
+
+        
+    </form>
+</body>
+</html>
